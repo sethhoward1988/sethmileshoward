@@ -1,0 +1,48 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Zombie</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                //Hide (Collapse) the toggle containers on load
+                $(".toggle_container1").hide(); 
+                $(".toggle_container2").hide(); 
+                $(".toggle_container3").hide(); 
+
+                //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+                $("h2.trigger").click(function(){
+                    $(this).toggleClass("active").next().slideToggle("slow");
+                    return false; //Prevent the browser jump to the link anchor
+                });
+
+            });
+        </script>
+        <script src="scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
+        <script src="scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
+        <link href="stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <h2 class="trigger"><a href="#"><img src="http://www.sethmileshoward.com/zombie/images/zombie.png" style="padding-left: -10px;"></a></h2>
+            <div class="toggle_container1">
+                <div class="block">
+                    Follow the story of several young boys as they run into the adventure of their life and run into evil zombies.
+                </div>
+            </div>
+            <h2 class="trigger"><a href="1"><img src="http://www.sethmileshoward.com/zombie/images/zombieAwakening.png"></a></h2>
+            <div class="toggle_container2">
+                The sequel to the original blockbuster "Zombie", taking off exactly where the original left off. A new wave of zombies arise leading to an epic earth-shattering war
+            </div>
+            <h2 class="trigger"><a href="2"><img src="http://www.sethmileshoward.com/zombie/images/zombieGenesis.png"></a></h2>
+            <div class="toggle_container3">
+                The third and possible final installment of the Zombie series, we learn the beginnings of the Zombie and also those responsible for their genesis
+            </div>
+        </div>
+        <div id="footer">
+            &copy 2011 Seth Miles Howard | <a href="mailto:smiles.seth@gmail.com">Contact Me </a>
+        </div>
+</body>

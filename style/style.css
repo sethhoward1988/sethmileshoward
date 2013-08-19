@@ -1,0 +1,396 @@
+
+body{
+    margin:0;
+    background-image:url('../images/body_bg.jpg');
+}
+
+.content{
+    width:900px;
+}
+
+#header{
+    margin:0 auto;
+    margin-top:30px;
+    margin-bottom:20px;
+    width:900px;
+    position:relative;
+}
+
+.seth{
+    background-image:url('../images/seth_howard.png');
+    width:334px;
+    height:70px;
+    float:left;
+}
+
+.web{
+    margin-top:40px;
+    background-image:url('../images/web_developer.png');
+    width:198px;
+    height:35px;
+    float:right;
+}
+
+.clear{
+    clear:both;
+}
+
+#container{
+    padding:30px;
+    padding-left:50px;
+    padding-top:50px;
+    padding-right:50px;
+    margin: 0 auto;
+    width:855px;
+    background-color: white;
+    box-shadow: 0px 0px 20px black;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.pane_header{
+    margin-bottom:20px;
+    font-family: 'MyriadProBold';
+    font-size:28pt;
+    color:#606060;
+}
+
+.col_left a{
+    text-decoration: none;
+}
+
+.pane_header:hover{
+    cursor:pointer;
+    transition: all 1s linear;
+    color:#838383;
+}
+
+#footer{
+    width:800px;
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:30px;
+    color:white;
+    font-family: 'MyriadProLightRegular';
+}
+
+.copyright{
+    float:left;
+}
+
+.contact{
+    float:right;
+}
+
+.pane{
+    font-family: 'MyriadProLightRegular';
+}
+
+h1{
+    font-family: 'MyriadProBold';
+}
+
+.pane_header.reduced{
+    font-size:16pt;
+    transition: all 1s;
+    -moz-transition: all 1s; /* Firefox 4 */
+    -webkit-transition: all 1s; /* Safari and Chrome */
+    -o-transition: all 1s; /* Opera */
+}
+
+.pane_header.reduced.selected, .pane_header.selected{
+    font-size:32pt;
+    margin-left:50px;
+    transition: all .5s;
+    -moz-transition: all .5s; /* Firefox 4 */
+    -webkit-transition: all .5s; /* Safari and Chrome */
+    -o-transition: all .5s; /* Opera */
+}
+
+.columns{
+    position:relative;
+}
+
+.col_left{
+    z-index: 100;
+    width:300px;
+    position: fixed;
+    margin-top:-10px;
+}
+
+.col_right{
+    color:#606060;
+    font-family:'MyriadProLightRegular';
+    z-index: 50;
+    position:absolute;
+    width:850px;
+    height:1500px;
+}
+
+.header{
+    font-family: 'MyriadProBold';
+    font-size:25pt;
+    line-height: 71px;
+}
+
+.push{
+    margin-left:300px;
+    width:580px;
+}
+
+.quote_open{
+    margin-top:4px;
+    margin-right:15px;
+}
+
+.quote_close{
+    margin-top:10px;
+    margin-left:15px;
+}
+
+.quote_open, .quote_close, .header{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.center{
+    text-align: center;
+}
+
+.construction{
+    margin:0 auto;
+    background-image:url('../images/construction.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:300px;
+    height:300px;
+}
+
+#philosophy{
+    margin-bottom:80px;
+}
+
+.paragraph{
+    vertical-align: top;
+    margin-top:15px;
+    display: inline-block;
+    line-height: 40px;
+    width:325px;
+    text-align: justify;
+}
+
+
+.aristotle, .art{
+    display: inline-block;
+    width:201px;
+    height:250px;
+    background-size: cover;
+}
+
+.aristotle{
+    background-image: url('../images/aristotle.jpg');
+}
+
+.art{
+    background-image: url('../images/art.jpg');
+    margin-right:15px;
+}
+
+.top_pane{
+    height:400px;
+}
+
+.highlight{
+    font-family: 'MyriadProBold'
+}
+
+.inline{
+    display:inline-block;
+}
+
+.synctrix, .droid, .sethandchloe, .vto, .purqz, .jessiejames, .pepsi, .hacker, .mPowa, .seth_website, .stopwatch{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+    width:200px;
+    height:150px;
+}
+
+.seth_website{
+    background-image:url('../images/seth_howard.png');
+}
+
+.mPowa{
+    background-image:url('../images/mpowa.png');
+}
+
+.stopwatch{
+    background-image:url('../images/thumbnail.png');
+}
+
+.hacker{
+    background-image:url('../images/hacker_logo.png');
+}
+
+.sethandchloe{
+    background-image:url('../images/seth_chloe.png');
+}
+
+.synctrix{
+    background-image:url('../images/synctrix_logo.png');
+}
+
+.droid{
+    background-image:url('../images/droid.png');
+}
+
+.vto{
+    background-image:url('../images/silloette.png');
+}
+
+.purqz{
+    background-image:url('../images/purqz.png');
+}
+
+.jessiejames{
+    background-image:url('../images/jessiejames.jpg');
+}
+
+.pepsi{
+    background-image:url('../images/pepsi.png');
+}
+
+.portfolio_wrapper{
+    margin-bottom:20px;
+}
+
+.push_header.header.center{
+    margin-top:-20px;
+}
+
+.push_text{
+    vertical-align: top;
+    margin-left:27px;
+    width:307px;
+    text-align: justify;
+    
+}
+
+.text_wrapper{
+    width:335px;
+    vertical-align: top;
+}
+
+.wrapper{
+    width:200px;
+    height:150px;
+    padding:5px;
+    box-shadow: 0 0 5px gray;
+}
+
+.push_header{
+    width:365px;
+}
+
+.center{
+    text-align: center;
+}
+
+#portfolio{
+    margin-bottom:80px;
+}
+
+.football{
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image:url('../images/collegeFootball.jpg');
+    width:840px;
+    height:404px;
+    box-shadow: 0 0 10px black;
+}
+
+.hj{
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image:url('../images/hj.png');
+    width:840px;
+    height:259px;
+    box-shadow: 0 0 10px black;
+}
+
+.big_stopwatch{
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image:url('../images/stopwatch_big.png');
+    width:840px;
+    height:294px;
+    box-shadow: 0 0 10px black;
+}
+
+.seth_pic{
+    margin-left:-20px;
+    margin-right:10px;
+    box-shadow: 0 0 10px black;
+    background-image:url('../images/me.jpg');
+    background-position: center center;
+    display: inline-block;
+    width:201px;
+    height:250px;
+    background-size: cover;
+}
+
+.phone{
+    margin-left:10px;
+    margin-right:10px;
+    box-shadow: 0 0 10px black;
+    background-image:url('../images/phone.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    display: inline-block;
+    width:201px;
+    height:250px;
+    background-size: 205px;
+}
+
+.toggleArt{
+    margin-left:300px;
+}
+
+#design{
+    margin-bottom:80px;
+}
+
+.seth_paragraph{
+    text-align: justify;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 40px;
+    width:335px;
+    margin-left:10px;
+    margin-bottom:35px;
+}
+
+.seth_contact{
+    vertical-align: top;
+    display: inline-block;
+    line-height: 40px;
+    width:335px;
+    margin-left:20px;
+    margin-top:50px;
+}
+
+.toggle_art{
+    margin-left:300px;
+}
+
+#me{
+    margin-bottom:80px;
+}
+
+.contact a{
+    color:white;
+    text-decoration: underline;
+}

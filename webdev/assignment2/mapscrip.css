@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font:12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+a{
+    color:darkolivegreen;
+}
+
+a.hover{
+    color:orange;
+}
+
+#scriptures {
+    background-color: #e6e0dc;
+    z-index: 500;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 33%;
+    min-height: 100%;
+    padding:50px 0px 10px 0px;
+}
+
+#scriptures>div{
+    padding-left:15px;
+}
+
+#earth {
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 67%;
+}
+
+ul.volumecontents {
+    list-style: none;
+}
+
+ul.volumecontents li {
+    display: inline-block;
+}
+
+ul.chaptersblock {
+    list-style: none;
+}
+
+ul.chaptersblock li {
+    display: inline-block;
+    width: 2em;
+    text-align: center;
+}
+
+ul.versesblock {
+    list-style: none;
+}
+
+ul.versesblock li {
+    display: block;
+}
+
+
+/*Seths CSS*/
+
+a.prevnav{
+    margin-right:15px;
+}
+
+#scripcrumb{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#scripcrumb a{
+    font-size:12pt;
+}
+
+.chapterheading{
+    
+}
+
+.navlinks{
+    
+}
+
+.navheading{
+    
+}
+
+.versesblock{
+    padding:10px;
+}
+
+.versesblock li{
+    margin-bottom:15px;
+    line-height:20px;
+}
+
+.verse{
+    font-size:16pt;
+}
+
+.volumetitle{
+    font-weight: bold;
+    font-size:16pt;
+}
+
+.volumecontents li{
+    text-align: top;
+    padding-top:5px;
+    text-align: left;
+    width:100px;
+}
+
+b.big{
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:18pt;
+}
+
+.expand{
+    position: absolute;
+    left:10px;
+    top:10px;
+    z-index: 1000;
+    text-align: center;
+    color:white;
+    padding:10px;
+    width:150px;
+    border-radius: 3px;
+    background-color:gray;
+}
+
+.expand:hover{
+    cursor:pointer;
+}

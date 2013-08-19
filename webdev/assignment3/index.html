@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Ultimate LDS Scripture Tool</title>
+        <link rel="stylesheet" type="text/css" href="mapscrip.css" />
+        <link rel="stylesheet" type="text/css" href="smallCSS.css" />
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="less.js"></script>
+        <script type="text/javascript" src="seth.js"></script>
+        <script type="text/javascript" src="util.js"></script>
+        <script type="text/javascript" src="extensions-0.2.1.pack.js"></script>
+        <script type="text/javascript" src="mapscrip.js"></script>
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "ur-532bcfd0-128e-4a86-842-601b8f16d24"});</script>
+        <script src="//connect.facebook.net/en_US/all.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+        <script src="fblogin.js"></script>
+        <script src="googlelogin.js"></script>
+    </head>
+    <body>
+        <div class="close-earth button">Back</div>
+        <div id="fb-root"></div>
+        <div class="overlay"></div>
+        <div class="login-pane">
+            <table>
+                <tr>
+                    <td><div class="fb-login"></div></td>
+                </tr>
+                <tr>
+                    <td><a href="https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%2Fprofile&redirect_uri=http%3A%2F%2Fsethmileshoward.com%2webdev%2assignment3&response_type=token&client_id=461597086668.apps.googleusercontent.com"><div class="google-login"></div></a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="header">
+            <div class="sharing">
+                <span class='st_sharethis_large' displayText='ShareThis'></span>
+                <span class='st_facebook_large' displayText='Facebook'></span>
+                <span class='st_twitter_large' displayText='Tweet'></span>
+                <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                <span class='st_pinterest_large' displayText='Pinterest'></span>
+                <span class='st_email_large' displayText='Email'></span>
+            </div>
+            <div class="login-options">
+                <div class="signin">Login</div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="scriptures2"></div>
+            <div id="scriptures"><img src="loading.gif" />Loading...<img src="loading.gif" /></div>
+            <div id="earth"></div>
+        </div>
+        <div id="fb-root"></div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+/*
+ * Narrow viewport layout
+ */
+div#earthWrapper {
+    display: none;
+    width: 100%;
+}
+
+div#scriptures, div#scriptures2 {
+    width: 100%;
+}
+
+/*
+ * Make volume links into buttons that are more touch-friendly
+ */
+ul.volumecontents {
+    padding: 0;
+}
+
+ul.volumecontents li {
+    margin: 0.2em 0.5em;
+}
+
+ul.volumecontents li a {
+    display: inline-block;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px rgba(0,0,0,0.2);
+    padding: 0.3em;
+    min-width: 8.3em;
+    text-align: center;
+}
+
+/*
+ * Make chapter links into buttons that are more touch-friendly
+ */
+ul.chaptersblock li {
+    width: 2.5em;
+    margin: 0.5em;
+}
+
+ul.chaptersblock li a {
+    display: inline-block;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px rgba(0,0,0,0.2);
+    width: 2.5em;
+    padding: 0.3em;
+}

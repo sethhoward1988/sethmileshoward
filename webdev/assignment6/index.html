@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scriptures.byu.edu Study Tool</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="mapscrip.css" />
+        <link rel="stylesheet" type="text/css" href="narrow.css" media="only screen and (max-width: 600px)" />
+        <link rel="stylesheet" type="text/css" href="zocial.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="topright">
+                <div id="signin">
+                    <a href="javascript:void(0);" onclick="MS.toggleSignIn()" id="signinlink">Sign In</a>
+                </div>
+                <div id="settings">
+                    <a href="javascript:void(0);" onclick="MS.showSettings()" id="settingslink">Settings</a> |
+                </div>
+                <div id="share">
+                    <a href="javascript:void(0);" onclick="MS.showShare()" id="settingslink">Share</a> |
+                </div>
+                <div id="rememberCamera">
+                    <a href="javascript:void(0);" onclick="MS.showCameraSettings()" id="settingslink">Suggest Camera State</a> |
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="scriptures2"></div>
+            <div id="scriptures"><img src="loading.gif" />Loading...<img src="loading.gif" /></div>
+            <div id="earthWrapper">
+                <div id="earth"></div>
+                <div id="earth-close">Close</div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            var google = null;
+        </script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="extensions-0.2.1.pack.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="mapscrip.js"></script>
+        <div id="fb-root"></div>
+        <script type="text/javascript" src="fblogin.js"></script>
+        <script type="text/javascript" src="galogin.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <div id="alphacover" onclick="MS.removePopup()"></div>
+        <!-- Sign in -->
+        <div id="signinpopup">
+            <div class="pointup"></div>
+            <div class="pointuplight"></div>
+            <div class="popupbody">
+                <a href="javascript:void(0);" onclick="MS.signIn('facebook')"
+                   class="zocial facebook">Sign in with Facebook</a>
+                <a href="javascript:void(0);" onclick="MS.signIn('google')"
+                   class="zocial googleplus">Sign in with Google+</a>
+                <p>Sign in to enable the online study journal, custom annotations, and
+                other features (coming in the future).</p>
+            </div>
+        </div>
+        <!-- Camera Form Popup -->
+        <div id="cameraform">
+            <div class="popupbody">
+                <div>
+                    <div class="intro">
+                        <h3>Suggesting Camera State</h3>
+                        By using this feature, you can suggest a camera state that best views the geographical position that you are currently viewing. The values below are prepopulated based on the current camera position. Simply move the camera around to the best place and submit your perspective to us.
+                    </div>
+                    <table id="suggestedCameraValues">
+                        <tr>
+                            <td>ID</td>
+                            <td class="oldValue id"></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td class="oldValue name"></td>
+                        </tr>
+                        <tr>
+                            <td>Latitude</td>
+                            <td class="oldValue latitude"></td>
+                        </tr>
+                        <tr>
+                            <td>Longitude</td>
+                            <td class="oldValue longitude"></td>
+                        </tr>
+                        <tr>
+                            <td>View Latitude</td>
+                            <td class="value get Latitude"></td>
+                        </tr>
+                        <tr>
+                            <td>View Longitude</td>
+                            <td class="value get Longitude"></td>
+                        </tr>
+                        <tr>
+                            <td>View Tilt</td>
+                            <td class="value get Tilt"></td>
+                        </tr>
+                        <tr>
+                            <td>View Roll</td>
+                            <td class="value get Roll"></td>
+                        </tr>
+                        <tr>
+                            <td>View Altitude</td>
+                            <td class="value get Altitude"></td>
+                        </tr>
+                        <tr>
+                            <td>View Heading</td>
+                            <td class="value get Heading"></td>
+                        </tr>
+                    </table>
+                    <div class="button submit">Submit</div>
+                </div>
+            </div>
+        </div>
+        <!-- Logged-in user -->
+        <div id="signoutpopup">
+            <div class="pointup"></div>
+            <div class="pointuplight"></div>
+            <div class="popupbody">
+                <a href="javascript:void(0);" onclick="MS.signOut()">Sign Out</a>
+            </div>
+        </div>
+        <!-- User settings -->
+        <div id="settingspopup">
+            <div class="pointup"></div>
+            <div class="pointuplight"></div>
+            <div class="popupbody">
+                <div class="settings-layers">
+                    <h5>Layers</h5>
+                    <div id="settings-layers-content"></div>
+                    <hr />
+                    <h5>Other Settings</h5>
+                    <label class="checkbox">
+                        <input type="checkbox" name="tf">
+                        Use touch-friendly buttons
+                    </label>
+                    <label class="checkbox">
+                        <input class="rememberInput" type="checkbox" name="rl">
+                        Remember last page when I return to this site
+                    </label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
